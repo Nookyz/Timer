@@ -1,0 +1,42 @@
+{
+	"extends": [
+		"airbnb",
+		"airbnb-typescript"
+	],
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"rules": {
+		"no-param-reassign": 0,
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-use-before-define": "off",
+		"linebreak-style": "off",
+		"import/extensions": "off",
+		"react/prop-types": "off",
+		"react/no-array-index-key": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/function-component-definition": "off",
+		"import/prefer-default-export": "off",
+		"react/require-default-props": [
+			"error",
+			{
+				"ignoreFunctionalComponents": true
+			}
+		],
+		"no-console": [
+			"error",
+			{
+				"allow": [
+					"error",
+					"warn",
+					"info"
+				]
+			}
+		]
+	}
+}
